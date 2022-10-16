@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    
+    max-width: 50%;
+    align-content: center;
+    margin: 50px 200px;
+    border: 5px  solid;
+}
+
+.details{
+    background-color: azure;
+}
+
+.selection{
+    background-color: aqua;
+    margin: 20px 100px;
+
+}
+
+.dob{
+    border: 5px solid blue;
+    border-radius: 5px;
+}
