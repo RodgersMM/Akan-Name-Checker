@@ -45,7 +45,9 @@ body{
     border-radius: 5px;
     display: flex;
     flex-direction: column;
-   
-    
-    
+  
+}
+
+#submit{
+    text-align: center;
 }
