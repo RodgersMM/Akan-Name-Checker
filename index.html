@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>AKAN Name Checker (ANC)</title>
+       <link rel="stylesheet" href="akan.css">
+    </head>
+    <body background="/images/ghana-beach.jpg" background-repeat = no-repeat>
+
+      <div class="akan-body">
+          <h1>
+            Akan Name Generator (ANG)
+          </h1>
+        <div class="description" title="Description" class="sections">
+          <h2>Application Description</h2>
+          <p> Akan Name Generator (ANG) is an application that generates Akan names. Akan Names are specific names given to children 
+            depending on their gender and day of the week they were born. In that regards, the application require you to enter your 
+            date of birth and gender to display your Akan name. </p>
+          
+          </p>
+        </div> 
+        <div class="sections"> 
+            <h3> Enter Date of Birth </h3>
+
+        <form class="myform" onsubmit="return getAkanName()">
+          
+            <section class="dob" id="dob"> 
+                 <label for="day-of-birth">
+                     Day:<input id="day-input" type="number" name="day-of-birth" placeholder="DD" value="" required>
+                 </label> 
+                <label for="month-of-birth">
+                     Month:<input id="month-input" type="number" name="month-of-birth" placeholder="MM" value="" required>
+                </label> 
+                <label for="year-of-birth">
+                   Year:<input id="year-input" type="number" name="year-of-birth" placeholder="YYYY" value="" required>
+                </label> 
+          </section>
+
+          <br>
+          <section class="gender-section" id="gender-section">
+        
+
+            <label for="gender">
+              <h3>Select your gender: </h3>
+                 Male
+              <input id="male-input" type="radio" name="gender" value="male" required>
+                 Female
+               <input id="female-input" type="radio" name="gender" value="female" required>
+            </label>
+          </section>
+          
+            <br>
+             <input id="get-name" type="submit" name="" value="Generate name">
+            <br><br>
+        </form>
+        
+        <form onsubmit="return clearInput()">
+          <input class="clear" type="submit" value="Clear input">
+        </form>
+
+        </div>
+        <section class="akan-name-display">  
+
+          <h4 id = display-name><strong> RESULTS  :</strong></h4>
+          <p id="result"></p>
+        </section>
+
+       </div>
+    </div>
+    
+    <script src="akan.js"></script>
+    </body>
+</html>
