@@ -16,30 +16,37 @@
         <div class="description" title="Description" class="sections">
           <h2>Application Description</h2>
           <p> Akan Name Generator (ANG) is an application that generates Akan names. Akan Names are specific names given to children 
-            depending on their gender and day of the week they were born. In that regards, the application require you to enter your 
+            depending on their gender and date of birth. In that regards, the application require you to enter your 
             date of birth and gender to display your Akan name. </p>
           
           </p>
         </div> 
-        <div class="sections"> 
-            <h3> Enter Date of Birth </h3>
+        <div class="sections">
+          <div> 
+             <div> 
+              <h2 class="required">REQUIREMENTS</h2>
+             </div>
 
-        <form class="myform" onsubmit="return getAkanName()">
+                 <h3> Enter Date of Birth </h3>
+
+               <form class="myform" onsubmit="return getAkanName()">
           
-            <section class="dob" id="dob"> 
-                 <label for="day-of-birth">
+                <section class="dob" id="dob"> 
+                    <label for="day-of-birth">
                      Day:<input id="day-input" type="number" name="day-of-birth" placeholder="DD" value="" required>
-                 </label> 
-                <label for="month-of-birth">
+                    </label> <br>
+                    <label for="month-of-birth">
                      Month:<input id="month-input" type="number" name="month-of-birth" placeholder="MM" value="" required>
-                </label> 
-                <label for="year-of-birth">
-                   Year:<input id="year-input" type="number" name="year-of-birth" placeholder="YYYY" value="" required>
-                </label> 
-          </section>
+                    </label> <br>
+                    <label for="year-of-birth">
+                    Year:<input id="year-input" type="number" name="year-of-birth" placeholder="YYYY" value="" required>
+                    </label> 
+                </section>
+        </div> 
+        
 
           <br>
-          <section class="gender-section" id="gender-section">
+          <div class="gender-section" id="gender-section">
         
 
             <label for="gender">
@@ -49,11 +56,12 @@
                  Female
                <input id="female-input" type="radio" name="gender" value="female" required>
             </label>
-          </section>
-          
+          </div>
+          <div class="submit">
             <br>
              <input id="get-name" type="submit" name="" value="Generate name">
-            <br><br>
+            <br>
+          </div>
         </form>
         
         <form onsubmit="return clearInput()">

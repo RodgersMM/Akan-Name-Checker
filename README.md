@@ -7,10 +7,14 @@ Akan Name Checker
 Rodgers Mutua 
 
 ## Description of the project
-This application checks displays your Akan Name after you enter your date of birth and select your gender.  
+Akan Name Generator (ANG) is an application that generates Akan names when user enters date of birth and their gender. 
+
+Akan Names are specific names given to children depending on their gender and day of the week they were born.
+
+ In that regards, the application require you to enter your date of birth and gender to display your Akan name.
 
 ## Project setup Instructions
-You can clone this application.  
+You can  
 
 
 ## Link to live site on GitHub Pages
