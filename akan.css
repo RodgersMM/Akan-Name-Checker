@@ -28,10 +28,24 @@ body{
 }
 
 .required{
-    align-items: center;
+    
+}
+
+#required{
+    text-align: center;
 }
 
 .sections{
     border:5px solid black;
     border-radius: 10px;
+}
+
+.required-items{
+    border:5px solid black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+   
+    
+    
 }

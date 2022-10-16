@@ -23,15 +23,12 @@
         </div> 
         <div class="sections">
           <div> 
-             <div> 
-              <h2 class="required">REQUIREMENTS</h2>
-             </div>
-
+             <div> <h2 class="required" id="required">REQUIREMENTS</h2> </div>
+              <div class="required-items" id="dob">
                  <h3> Enter Date of Birth </h3>
 
-               <form class="myform" onsubmit="return getAkanName()">
-          
-                <section class="dob" id="dob"> 
+                <form class="myform" onsubmit="return getAkanName()">
+         
                     <label for="day-of-birth">
                      Day:<input id="day-input" type="number" name="day-of-birth" placeholder="DD" value="" required>
                     </label> <br>
@@ -41,22 +38,23 @@
                     <label for="year-of-birth">
                     Year:<input id="year-input" type="number" name="year-of-birth" placeholder="YYYY" value="" required>
                     </label> 
-                </section>
-        </div> 
+              </div>
         
+          <div class="required-items" id="gender">
 
-          <br>
-          <div class="gender-section" id="gender-section">
         
-
             <label for="gender">
               <h3>Select your gender: </h3>
                  Male
               <input id="male-input" type="radio" name="gender" value="male" required>
                  Female
                <input id="female-input" type="radio" name="gender" value="female" required>
-            </label>
+             </label>
           </div>
+          </div>
+
+
+
           <div class="submit">
             <br>
              <input id="get-name" type="submit" name="" value="Generate name">
