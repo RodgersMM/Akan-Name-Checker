@@ -4,82 +4,83 @@
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel=”stylesheet” href=”css/bootstrap.css”>
+       <link rel=”stylesheet” href=”css/bootstrap-responsive.css”>
        <title>AKAN Name Checker (ANC)</title>
        <link rel="stylesheet" href="akan.css">
     </head>
     <body background="/images/ghana-beach.jpg" background-repeat = no-repeat>
-
-      <div class="akan-body">
-          <h1>
-            Akan Name Generator (ANG)
-          </h1>
-        <div class="description" title="Description" class="sections">
-          <div class="descr">
-            <h2 id="descr">DESCRIPTION</h2>
-          <p> Akan Name Generator (ANG) is an application that generates Akan names. Akan Names are specific names given to children 
-            depending on their gender and date of birth. In that regards, the application require you to enter your 
-            date of birth and gender to display your Akan name. </p>
-          
-          </p>
-
-          </div>
-          
-        </div> 
-        <div class="sections">
-          <div> 
-             <div> <h2 class="required" id="required">REQUIREMENTS</h2> </div>
-              <div class="required-items" id="dob">
-                 <h3> Enter Date of Birth </h3>
-
-                <form class="myform" onsubmit="return getAkanName()">
-         
-                    <label for="day-of-birth">
-                     Day:<input id="day-input" type="number" name="day-of-birth" placeholder="DD" value="" required>
-                    </label> <br>
-                    <label for="month-of-birth">
-                     Month:<input id="month-input" type="number" name="month-of-birth" placeholder="MM" value="" required>
-                    </label> <br>
-                    <label for="year-of-birth">
-                    Year:<input id="year-input" type="number" name="year-of-birth" placeholder="YYYY" value="" required>
-                    </label> 
-              </div>
-        
-          <div class="required-items" id="gender">
-
-        
-            <label for="gender">
-              <h3>Select your gender: </h3>
-                 Male
-              <input id="male-input" type="radio" name="gender" value="male" required>
-                 Female
-               <input id="female-input" type="radio" name="gender" value="female" required>
-             </label>
-          </div>
-          </div>
+      
 
 
 
-          <div class="submit">
-            <h2 id="submit" class="submit">SUBMIT/RESET</h2>
-            <br>
-             <input id="get-name" type="submit" name="" value="Generate name">
-            <br>
-          </div>
-        </form>
-        
-        <form onsubmit="return clearInput()">
-          <input class="clear" type="submit" value="Clear input">
-        </form>
-
+        <div class="akan-body">
+            <h1 id="title">
+               Akan Name Generator (ANG)
+            </h1>
         </div>
-        <section class="akan-name-display">  
 
-          <h4 id = display-name><strong> RESULTS  :</strong></h4>
-          <p id="result"></p>
-        </section>
+        <div class="body-sections">
+          <div class="body-sections-items">
+              <div class="description" title="Description" class="sections">
+                  <h2 id="descr">OUTLINE</h2>
+                  <p> Akan Name Checker (ANC) is an application that generates Akan names when you enter your date of birth
+                    and your gender.</p>
+              </div>
+             <div class="sections">
+                <div> 
+                  <div> <h2 class="required" id="required">REQUIREMENTS</h2> </div>
+                    <div class="required-items" id="dob">
+                        <form class="myform" onsubmit="return getAkanName()">
+                          <h3> Enter Date of Birth </h3>
+                            <label for="day-of-birth">
+                             Day:<input id="day-input" type="number" name="day-of-birth" placeholder="DD" value="" required>
+                            </label> <br>
+                            <label for="month-of-birth">
+                             Month:<input id="month-input" type="number" name="month-of-birth" placeholder="MM" value="" required>
+                            </label> <br>
+                            <label for="year-of-birth">
+                             Year:<input id="year-input" type="number" name="year-of-birth" placeholder="YYYY" value="" required>
+                           </label> 
+                          <div class="required-items" id="gender">
+                            <label for="gender">
+                             <h3>Select your gender: </h3>
+                              Male: <input id="male-input" type="radio" name="gender" value="male" required>
+                              Female: <input id="female-input" type="radio" name="gender" value="female" required>
+                            </label>
+                          </div>
+                         </div>
+                          <div class="submit">
+                           <h2 id="submit" class="submit">SUBMIT/RESET</h2><br>
+                           <input id="get-name" type="submit" name="" value="Generate name"><br>
+                          </div>
+                        </form>
+        
+                      <form onsubmit="return clearInput()">
+                         <input class="clear" type="submit" value="Clear input">
+                      </form>
 
-       </div>
-    </div>
+        
+                      <section class="akan-name-display"> 
+                       <h4 id = display-name><strong> RESULTS  :</strong></h4>
+                       <p id="result"></p>
+                    </section>
+                  </div>
+                 </div>
+                </div>
+
+      <div class="body-sections-items">
+
+        <h1 class="description" id="description">DESCRIPTION</h1>
+        
+        <p>So, what are Akan names and their origin. 
+          
+          Akan naming is based on Ghana heritage. In that regards, the application require you to enter your 
+          date of birth and gender to display your Akan name.
+        </p>
+      </div>
+
+  </div>
     
     <script src="akan.js"></script>
     </body>

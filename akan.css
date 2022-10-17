@@ -10,6 +10,11 @@ body{
     align-content: center;
     margin: 50px 200px;
     border: 5px  solid;
+    border-radius: 30px;
+}
+
+#title{
+    text-align: center;
 }
 
 .details{
@@ -51,7 +56,28 @@ body{
 #submit{
     text-align: center;
 }
-
+.descr{
+    border: 5px solid salmon;
+    border-radius: 5px;
+}
 #descr{
     text-align: center;
 }
+
+.body-sections{
+    display: flex;
+
+    
+}
+.body-sections-items{
+ 
+    
+    
+
+}
+
+@media screen and (max-width: 575px) {
+    #main {
+      display: block;
+    }
+  }
