@@ -67,6 +67,12 @@ body{
 .body-sections{
     display: flex;
 
+@media (max-width: 800px) {
+        .body-sections{
+          flex-direction: row;
+        }
+      }
+
     
 }
 .body-sections-items{
@@ -80,4 +86,8 @@ body{
     #main {
       display: block;
     }
+  }
+
+  .ghana-images{
+    max-width: 100%;
   }
