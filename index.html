@@ -9,14 +9,14 @@
        <title>AKAN Name Checker (ANC)</title>
        <link rel="stylesheet" href="akan.css">
     </head>
-    <body background="/images/ghana-beach.jpg" background-repeat = no-repeat>
+    <body>
       
 
 
 
         <div class="akan-body">
             <h1 id="title">
-               Akan Name Generator (ANG)
+               Akan Name Checker (ANC)
             </h1>
         </div>
 
@@ -24,11 +24,11 @@
           <div class="body-sections-items">
               <div class="description" title="Description" class="sections">
                   <h2 id="descr">OUTLINE</h2>
-                  <p> Akan Name Checker (ANC) is an application that generates Akan names when you enter your date of birth
-                    and your gender.</p>
+                  <p> Akan Name Checker (ANC) is an application that generates Akan names once the 
+                    user enters both date of birth and gender then submit.</p>
               </div>
-             <div class="sections">
-                <div> 
+               <div class="sections">
+                 <div> 
                   <div> <h2 class="required" id="required">REQUIREMENTS</h2> </div>
                     <div class="required-items" id="dob">
                         <form class="myform" onsubmit="return getAkanName()">
@@ -50,36 +50,37 @@
                             </label>
                           </div>
                          </div>
-                          <div class="submit">
-                           <h2 id="submit" class="submit">SUBMIT/RESET</h2><br>
-                           <input id="get-name" type="submit" name="" value="Generate name"><br>
-                          </div>
-                        </form>
+                          <div id="submit" class="sections">
+                            <h2 id="submit" class="submit">SUBMIT/RESET</h2><br>
+                               <input id="get-name" type="submit" name="" value="Submit"><br>
+                          
+                         </form>
         
                       <form onsubmit="return clearInput()">
                          <input class="clear" type="submit" value="Clear input">
                       </form>
+                    </div>
 
         
-                      <section class="akan-name-display"> 
+                      <section id="akan-name-display" class="sections"> 
                        <h4 id = display-name><strong> RESULTS  :</strong></h4>
                        <p id="result"></p>
                     </section>
                   </div>
                  </div>
-                </div>
+            </div>
 
-      <div class="body-sections-items">
+          <div class="body-sections-items">
 
-        <h1 class="description" id="description">DESCRIPTION</h1>
-        
-        <p>So, what are Akan names and their origin. 
+               <h1 class="description" id="description">DESCRIPTION</h1>
+         
+                   <p>So, what are Akan names and their origin. 
 
-          Akan naming is based on Ghana heritage. In that regards, the application require you to enter your 
-          date of birth and gender to display your Akan name.
-        </p>
-        <img src="/images/ghana-lady.jpg" alt="A Ghananian Lady Flashing Flag" class="ghana-images">
-      </div>
+                      Akan naming is based on Ghana heritage. In that regards, the application require you to enter your 
+                          date of birth and gender to display your Akan name.
+                                         </p>
+                           <img src="/images/ghana-lady.jpg" alt="A Ghananian Lady Flashing Flag" class="ghana-images">
+         </div>
 
   </div>
     
